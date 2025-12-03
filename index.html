@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vijay Kumar — Portfolio</title>
+  <meta name="description" content="Vijay Kumar — Mechanical Engineer & Aspiring Full Stack Developer. Portfolio showcasing projects, skills, and resume." />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- GALAXY BACKGROUND LAYERS -->
+  <div id="galaxy-wrap" aria-hidden="true">
+    <canvas id="nebula-canvas"></canvas>
+    <canvas id="star-canvas-back"></canvas>
+    <canvas id="star-canvas-mid"></canvas>
+    <canvas id="star-canvas-front"></canvas>
+    <div id="glow-follow" class="glow-follow" aria-hidden="true"></div>
+  </div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-row">
+      <div class="brand">
+        <a href="#hero" class="brand-link" aria-label="Go to top">
+          <strong class="brand-name">Vijay Kumar<span class="dot">.</span></strong>
+          <span class="brand-tag">Mech Eng • Web Dev</span>
+        </a>
+      </div>
+
+      <nav class="main-nav" role="navigation" aria-label="Primary">
+        <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="navList">☰</button>
+        <ul id="navList" class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggle" class="theme-btn" aria-pressed="false" title="Toggle theme">🌙</button>
+        <a class="btn resume" href="vijaykumarResume.pdf" download>Download Resume</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <!-- HERO -->
+    <section id="hero" class="hero" aria-label="Introduction">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <div class="eyebrow">Hello, I’m</div>
+          <h1 class="hero-title">Vijay Kumar</h1>
+          <p class="hero-sub">Mechanical Engineer (B.Tech) • Aspiring Full-Stack Web Developer</p>
+
+          <div class="hero-cta">
+            <a class="btn primary" href="#projects">See Projects</a>
+            <a class="btn ghost" href="#contact">Hire / Contact</a>
+          </div>
+
+          <ul class="meta-list">
+            <li><strong>Location:</strong> Andhra Pradesh, India</li>
+            <li><strong>Email:</strong> <a href="mailto:nvjkumar77@gmail.com">nvjkumar77@gmail.com</a></li>
+            <li><strong>Phone:</strong> +91 8886488742</li>
+          </ul>
+        </div>
+
+        <div class="hero-right">
+          <div class="profile-card" id="tiltCard" aria-hidden="true">
+            <svg class="profile-art" viewBox="0 0 500 500" preserveAspectRatio="xMidYMid slice" role="img" aria-hidden="true">
+              <defs>
+                <linearGradient id="g1" x1="0" x2="1">
+                  <stop offset="0" stop-color="#1368d6"/><stop offset="1" stop-color="#2ea0ff"/>
+                </linearGradient>
+                <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                  <feGaussianBlur stdDeviation="12" result="blur"/>
+                  <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                </filter>
+              </defs>
+              <rect width="100%" height="100%" rx="28" fill="url(#g1)" filter="url(#glow)"/>
+              <g transform="translate(60,80)">
+                <rect x="0" y="0" width="380" height="340" rx="20" fill="#ffffff22" />
+                <g transform="translate(40,30)" fill="#ffffffaa">
+                  <rect x="0" y="0" rx="12" width="120" height="120" />
+                  <rect x="140" y="12" rx="6" width="180" height="20" />
+                  <rect x="140" y="48" rx="6" width="120" height="14" />
+                  <rect x="140" y="74" rx="6" width="160" height="12" />
+                  <rect x="0" y="160" rx="8" width="320" height="12" />
+                  <rect x="0" y="188" rx="8" width="320" height="12" />
+                </g>
+              </g>
+            </svg>
+
+            <div class="card-body">
+              <h3 class="card-title">Vijay Kumar</h3>
+              <p class="card-sub">Mechanical Engineer • Web: HTML, CSS, JavaScript</p>
+              <div class="card-stats">
+                <div><span class="stat-num" data-target="8.5">0</span><span class="stat-label">CGPA</span></div>
+                <div><span class="stat-num" data-target="2022">0</span><span class="stat-label">B.Tech Start</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="wave" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="panel" aria-labelledby="about-h">
+      <div class="container">
+        <h2 id="about-h" class="panel-title">About</h2>
+        <div class="panel-grid">
+          <div class="panel-text">
+            <p>
+              I am a detail-oriented Mechanical Engineering student with an interest in full-stack development.
+              I enjoy applying engineering problem solving to build performant, accessible web experiences.
+            </p>
+            <p><strong>Objective:</strong> Seek project/internship opportunities to combine engineering with web development using HTML, CSS & JavaScript.</p>
+            <p class="muted small">Resume details used from uploaded file. :contentReference[oaicite:0]{index=0}</p>
+          </div>
+
+          <aside class="panel-aside" aria-hidden="true">
+            <div class="info-block">
+              <h4>Strengths</h4>
+              <ul>
+                <li>Analytical problem solving</li>
+                <li>Quick learner & disciplined</li>
+                <li>Communication & time management</li>
+              </ul>
+            </div>
+
+            <div class="info-block">
+              <h4>Tools</h4>
+              <p>CATIA · SolidWorks · ANSYS · AutoCAD · Python</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="panel alt" aria-labelledby="skills-h">
+      <div class="container">
+        <h2 id="skills-h" class="panel-title">Skills & Proficiency</h2>
+
+        <div class="skills-grid">
+          <div class="skill">
+            <div class="skill-head">
+              <h3>Frontend</h3><span>85%</span>
+            </div>
+            <div class="progress" data-value="85"><span style="width:0%"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill-head">
+              <h3>JavaScript</h3><span>70%</span>
+            </div>
+            <div class="progress" data-value="70"><span style="width:0%"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill-head">
+              <h3>Engineering Tools</h3><span>80%</span>
+            </div>
+            <div class="progress" data-value="80"><span style="width:0%"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill-head">
+              <h3>Problem Solving</h3><span>90%</span>
+            </div>
+            <div class="progress" data-value="90"><span style="width:0%"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="panel" aria-labelledby="projects-h">
+      <div class="container">
+        <h2 id="projects-h" class="panel-title">Selected Projects</h2>
+
+        <div class="carousel" aria-roledescription="carousel" data-index="0">
+          <button class="carousel-prev" aria-label="Previous project">‹</button>
+          <div class="carousel-track">
+            <!-- cards -->
+            <article class="project-card" tabindex="0">
+              <div class="card-head"><h3>Responsive Portfolio Website</h3><span class="tag">HTML · CSS · JS</span></div>
+              <p>Built a responsive portfolio to showcase projects & skills. Improved accessibility and reduced page load times by ~25%.</p>
+              <div class="card-footer">
+                <a class="btn small" href="vijaykumarResume.pdf" download>Resume</a>
+                <a class="btn ghost" href="#contact">Discuss</a>
+              </div>
+            </article>
+
+            <article class="project-card" tabindex="0">
+              <div class="card-head"><h3>Certificate Validation (Design)</h3><span class="tag">Concept · Blockchain idea</span></div>
+              <p>Design and planning for a certificate validation system using web frontend + Django backend and blockchain for tamper-proofing.</p>
+              <div class="card-footer">
+                <a class="btn small" href="#contact">Collaborate</a>
+              </div>
+            </article>
+
+            <article class="project-card" tabindex="0">
+              <div class="card-head"><h3>Project Placeholder</h3><span class="tag">Coming soon</span></div>
+              <p>More projects will be added as they complete. Ready to showcase code samples or live demos.</p>
+              <div class="card-footer">
+                <a class="btn small" href="#contact">Request Demo</a>
+              </div>
+            </article>
+          </div>
+          <button class="carousel-next" aria-label="Next project">›</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="panel alt" aria-labelledby="edu-h">
+      <div class="container">
+        <h2 id="edu-h" class="panel-title">Education</h2>
+        <div class="edu-grid">
+          <div class="edu-card">
+            <h3>B.Tech — Mechanical Engineering</h3>
+            <p>Adikavi Nannaya University, Rajahmundry (2022–2026)</p>
+            <p>CGPA: <strong>8.5</strong></p>
+          </div>
+          <div class="edu-card">
+            <h3>Higher Secondary</h3>
+            <p>SASI Junior College, Tadepalligudem (2020–2022) — CGPA: 7.9</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section id="certificates" class="panel" aria-labelledby="cert-h">
+      <div class="container">
+        <h2 id="cert-h" class="panel-title">Certificates</h2>
+        <ul class="certs">
+          <li>SolidWorks — CITD Hyderabad</li>
+          <li>CATIA — CITD Hyderabad</li>
+          <li>Python for Non-Programmers — Great Learning</li>
+          <li>AutoCAD Essentials — SourceCAD</li>
+          <li>Basics of FEA — NPTEL</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="panel alt" aria-labelledby="contact-h">
+      <div class="container">
+        <h2 id="contact-h" class="panel-title">Contact</h2>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Get in touch</h3>
+            <p class="muted small">Open to internships, projects, and collaborations.</p>
+            <ul class="contact-list">
+              <li><strong>Email:</strong> <a href="mailto:nvjkumar77@gmail.com">nvjkumar77@gmail.com</a></li>
+              <li><strong>Phone:</strong> +91 8886488742</li>
+              <li><strong>Location:</strong> Andhra Pradesh, India</li>
+            </ul>
+            <a class="btn primary" href="vijaykumarResume.pdf" download>Download Resume</a>
+          </div>
+
+          <form id="contactForm" class="contact-form" novalidate>
+            <label>
+              <span>Name</span>
+              <input id="cname" name="name" type="text" required placeholder="Your name">
+            </label>
+            <label>
+              <span>Email</span>
+              <input id="cemail" name="email" type="email" required placeholder="you@example.com">
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea id="cmessage" name="message" required rows="5" placeholder="Tell me about your project..."></textarea>
+            </label>
+            <div class="form-row">
+              <button class="btn primary" type="submit">Send</button>
+              <button class="btn ghost" type="reset">Reset</button>
+            </div>
+            <div id="formStatus" class="form-status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-row">
+      <div>© <span id="fyear"></span> Vijay Kumar</div>
+      <div class="footer-links">
+        <a href="vijaykumarResume.pdf" download>Resume</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
